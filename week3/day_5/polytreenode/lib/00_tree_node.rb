@@ -44,6 +44,4 @@ class PolyTreeNode
             arr.concat(node.children)
         end
     end
-
-
 end
