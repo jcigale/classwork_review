@@ -37,11 +37,11 @@ class PolyTreeNode
     end
 
     def bfs(target)
-        arr = [self]
-        until arr.empty?
-            node = arr.shift
+        queue = [self]
+        until queue.empty?
+            node = queue.shift
             return node if node.value == target
-            arr.concat(node.children)
+            queue.concat(node.children)
         end
     end
 end
